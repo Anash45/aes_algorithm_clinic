@@ -1,0 +1,1 @@
+<!-- This file will contain all the functions we'll use during the process. -->
