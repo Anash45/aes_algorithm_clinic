@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AES Algorithm Clinic</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="h-link">
+                <img src="./assets/img/logo.png" alt="Logo" height="60"><span>AES Clinic</span>
+            </a>
+            <ul class="h-list">
+                <li><span>Hi, Anas</span></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </header>
+        <aside>
+            <ul class="aside-list">
+                <li class="nav-title">Patients</li>
+                <li>
+                    <a href="add_patient.html" class="nav-link">Add Patient</a>
+                </li>
+                <li>
+                    <a href="patients.html" class="nav-link">View patients</a>
+                </li>
+                <li class="nav-title">Files</li>
+                <li>
+                    <a href="add_file.html" class="nav-link">Add file</a>
+                </li>
+                <li>
+                    <a href="files.html" class="nav-link">View files</a>
+                </li>
+            </ul>
+        </aside>
+        <main>
+            <div class="title text-center">
+                <h2>Add File</h2>
+            </div>
+            <div class="box box-sml">
+                <form action="" class="w-full" enctype="multipart/form-data">
+                    <div class="field">
+                        <label class="f-label">File Name:</label>
+                        <input type="text" required name="F_Name" class="f-inp" placeholder="File's Name">
+                    </div>
+                    <div class="field">
+                        <label class="f-label">Upload File:</label>
+                        <input type="file" required name="FileID" class="f-inp" placeholder="Patient's File">
+                    </div>
+                    <div class="field">
+                        <label class="f-label">File Encryption Key:</label>
+                        <input type="password" required name="F_EncKey" class="f-inp" placeholder="File's Encryption Key">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="text-center">
+                <img src="./assets/img/logo.png" alt="Logo" height="50">
+                <p>&copy; 2024 - AES Clinic - All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
+    <script src="./assets/js/script.js"></script>
+
+</html>
