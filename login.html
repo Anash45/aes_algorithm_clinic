@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AES Algorithm Clinic</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+
+    <body class="only-main">
+        <main>
+            <div class="title text-center">
+                <h2>Login</h2>
+            </div>
+            <div class="box box-sml">
+                <form action="" class="w-full" enctype="multipart/form-data">
+                    <div class="field">
+                        <label class="f-label">Email:</label>
+                        <input type="email" required name="Email" class="f-inp" placeholder="Your e-mail address">
+                    </div>
+                    <div class="field">
+                        <label class="f-label">Password:</label>
+                        <input type="password" required name="Password" class="f-inp" placeholder="Your password">
+                    </div>
+                    <div class="field">
+                        <label class="f-label">Loggin in as:</label>
+                        <select required name="doctorID" class="f-inp">
+                            <option value="" selected disabled>Select a role</option>
+                            <option value="Admin">Admin</option>
+                            <option value="Doctor">Doctor</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+    <script src="./assets/js/script.js"></script>
+
+</html>
