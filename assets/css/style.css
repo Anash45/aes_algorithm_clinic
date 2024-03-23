@@ -261,3 +261,33 @@ thead th {
     display: block;
     width: 100%;
 }
+
+.cards-flex{
+    display: flex;   
+}
+
+.card-cont{
+    padding: 15px;
+    width: 33.33%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+}
+
+.card-red{
+    background-color: #c70000;
+    color: #FFFFFF;
+}
+.card-blue{
+    background-color: dodgerblue;
+    color: #FFFFFF;
+}
+.card-darkblue{
+    background-color: darkslateblue;
+    color: #FFFFFF;
+}

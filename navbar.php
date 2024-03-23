@@ -1,5 +1,8 @@
 <aside>
     <ul class="aside-list">
+        <li>
+            <a href="index.php" class="nav-link">Dashboard</a>
+        </li>
         <?php
         if (isAdmin()) {
             ?>

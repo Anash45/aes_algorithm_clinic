@@ -392,16 +392,42 @@ function sanitize($input)
     return $input;
 }
 
-function isLoggedIn() {
-    return isset($_SESSION['ID']);
+function isLoggedIn()
+{
+    return isset ($_SESSION['ID']);
 }
 
 // Function to check if the logged-in user is an admin
-function isAdmin() {
-    return (isset($_SESSION['Role']) && $_SESSION['Role'] == 'Admin');
+function isAdmin()
+{
+    return (isset ($_SESSION['Role']) && $_SESSION['Role'] == 'Admin');
 }
 
 // Function to check if the logged-in user is a doctor
-function isDoctor() {
-    return (isset($_SESSION['Role']) && $_SESSION['Role'] == 'Doctor');
+function isDoctor()
+{
+    return (isset ($_SESSION['Role']) && $_SESSION['Role'] == 'Doctor');
+}
+function getCounts($pdo)
+{
+    // Initialize counts array
+    $counts = array();
+
+    // Query to get count of doctors
+    $queryDoctor = "SELECT COUNT(*) AS doctorCount FROM doctor";
+    $stmtDoctor = $pdo->query($queryDoctor);
+    $counts['doctorCount'] = $stmtDoctor->fetchColumn();
+
+    // Query to get count of patients
+    $queryPatient = "SELECT COUNT(*) AS patientCount FROM patient";
+    $stmtPatient = $pdo->query($queryPatient);
+    $counts['patientCount'] = $stmtPatient->fetchColumn();
+
+    // Query to get count of files
+    $queryFile = "SELECT COUNT(*) AS fileCount FROM file";
+    $stmtFile = $pdo->query($queryFile);
+    $counts['fileCount'] = $stmtFile->fetchColumn();
+
+    // Return counts array
+    return $counts;
 }

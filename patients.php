@@ -30,7 +30,7 @@ if (isset ($_GET['delete'])) {
         <?php include ('navbar.php'); ?>
         <main>
             <div class="title text-center">
-                <h2>Files</h2>
+                <h2>Patients</h2>
             </div>
             <div class="box">
                 <?php echo $info; ?>
