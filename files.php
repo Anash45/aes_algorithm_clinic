@@ -44,7 +44,8 @@ $files = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </div>
             <div class="box">
                 <?php echo $info; ?>
-                <table>
+                <input type="text" placeholder="Search..." class="f-inp s-inp" id="search">
+                <table id="result-table">
                     <thead>
                         <tr>
                             <th>File ID</th>

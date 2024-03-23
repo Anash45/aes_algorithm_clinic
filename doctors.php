@@ -37,7 +37,8 @@ if(isset($_GET['delete'])){
             </div>
             <div class="box">
                 <?php echo $info; ?>
-                <table>
+                <input type="text" placeholder="Search..." class="f-inp s-inp" id="search">
+                <table id="result-table">
                     <thead>
                         <tr>
                             <th>Doctor ID</th>
