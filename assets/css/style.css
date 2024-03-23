@@ -210,20 +210,54 @@ th {
     padding: 5px;
 }
 
-thead{
+thead {
     color: #FFFFFF;
     font-size: 18px;
     background-color: #00b8dd;
 }
 
-thead th{
+thead th {
     padding: 10px;
 }
-.only-main main{
+
+.only-main main {
     padding: 30px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 200px !important;
+}
+
+.alert {
+    padding: 12px;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.alert-success {
+    background-color: #d2ffc9;
+    border-color: #168700;
+    color: #168700;
+    font-weight: 500;
+}
+
+.alert-danger {
+    background-color: #ffc9c9;
+    border-color: #870000;
+    color: #870000;
+    font-weight: 500;
+}
+
+.form-note {
+    font-size: 12px;
+    color: #333;
+}
+
+.btn-dnld {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
 }
